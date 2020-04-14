@@ -4,10 +4,10 @@ import Palette from './Palette';
 import { generatePalette } from './colorHelpers';
 
 class App extends Component {
-  render() {
+  render() {    
     return (
       <div className="App">
-        <Palette {...seedColors[2]} />
+        <Palette palette={generatePalette(seedColors[4])} />
       </div>
     );
   }
