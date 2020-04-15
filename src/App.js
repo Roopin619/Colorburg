@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Route, Switch} from 'react-router-dom';
 import seedColors from './seedColors';
 import Palette from './Palette';
 import { generatePalette } from './colorHelpers';
