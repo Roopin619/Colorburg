@@ -7,13 +7,13 @@ import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 const styles = {
     picker: {
         width: "100% !important",
-        marginTop: "2 rem"
+        marginTop: "2rem"
     },
     addColor: {
         width: "100%",
-        padding: "1 rem",
-        marginTop: "1 rem",
-        fontSize: "2 rem"
+        padding: "1rem",
+        marginTop: "1rem",
+        fontSize: "2rem"
     },
     colorNameInput: {
         width: "100%",

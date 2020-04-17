@@ -12,11 +12,11 @@ class PaletteMetaForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            open: false,
+            open: true,
             newPaletteName: ""
         };
     }
-    
+
     componentDidMount() {
         ValidatorForm.addValidationRule('isPaletteNameUnique', (value) =>
             this.props.palettes.every(
@@ -40,52 +40,41 @@ class PaletteMetaForm extends Component {
     render() {
         const { newPaletteName } = this.state;
         return (
-            <div>
-                <Button
-                    variant='outlined'
-                    color='primary'
-                    onClick={this.handleClickOpen}
-                >
-                    Open form dialog
-                </Button>
-                <Dialog
-                    open={this.state.open}
-                    onClose={this.handleClose}
-                    aria-labelledby='form-dialog-title'
-                >
-                    <DialogTitle id='form-dialog-title'>Subscribe</DialogTitle>
+            <Dialog
+                open={this.state.open}
+                onClose={this.handleClose}
+                aria-labelledby='form-dialog-title'
+            >
+                <DialogTitle id='form-dialog-title'>Choose a Palette Name</DialogTitle>
+                <ValidatorForm onSubmit={() => this.props.handleSubmit(newPaletteName)}>
                     <DialogContent>
                         <DialogContentText>
-                            To subscribe to this website, please enter your email address
-                            here. We will send updates occasionally.
-                        </DialogContentText>
-                        <ValidatorForm onSubmit={() => this.props.handleSubmit(newPaletteName)}>
-                            <TextValidator
-                                label="Palette Name"
-                                name="newPaletteName"
-                                value={newPaletteName}
-                                onChange={this.handleChange}
-                                validators={["required", "isPaletteNameUnique"]}
-                                errorMessages={[
-                                    "Please enter a palette name!",
-                                    "Palette name already used!"
-                                ]}
-                            />
-                            <Button variant="contained" color="primary" type="submit">
-                                Save Palette
-                            </Button>
-                        </ValidatorForm>
+                            Please enter a name for your beautiful palette. Make sure it's unique!
+                            </DialogContentText>
+                        <TextValidator
+                            label="Palette Name"
+                            name="newPaletteName"
+                            value={newPaletteName}
+                            fullWidth
+                            margin="normal"
+                            onChange={this.handleChange}
+                            validators={["required", "isPaletteNameUnique"]}
+                            errorMessages={[
+                                "Please enter a palette name!",
+                                "Palette name already used!"
+                            ]}
+                        />
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={this.handleClose} color='primary'>
                             Cancel
-                        </Button>
-                        <Button onClick={this.handleClose} color='primary'>
-                            Subscribe
-                        </Button>
+                            </Button>
+                        <Button variant="contained" color="primary" type="submit">
+                            Save Palette
+                            </Button>
                     </DialogActions>
-                </Dialog>
-            </div>
+                </ValidatorForm>
+            </Dialog>
         );
     }
 }
