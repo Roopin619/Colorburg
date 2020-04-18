@@ -38,7 +38,7 @@ export default {
             height: "0.8rem",
             marginTop: "-3px"
         },
-        [sizes.down("md")]: {
+        [sizes.down("sm")]: {
             width: "8rem"
         }
     },

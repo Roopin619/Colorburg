@@ -30,14 +30,6 @@ class PaletteMetaForm extends Component {
         this.setState({ [e.target.name]: e.target.value });
     }
 
-    handleClickOpen = () => {
-        this.setState({ open: true });
-    }
-
-    handleClose = () => {
-        this.setState({ open: false });
-    }
-
     showEmojiPicker = () => {
         this.setState({ stage: "emoji" });
     }
@@ -61,7 +53,6 @@ class PaletteMetaForm extends Component {
                 </Dialog>
                 <Dialog
                     open={stage === "form"}
-                    onClose={this.handleClose}
                     aria-labelledby='form-dialog-title'
                     onClose={hideForm}
                 >

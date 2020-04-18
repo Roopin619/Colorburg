@@ -103,7 +103,7 @@ class NewPaletteForm extends Component {
                     <div className={classes.container}>
                         <Typography variant="h4" gutterBottom>
                             Design Your Palette
-                    </Typography>
+                        </Typography>
                         <div className={classes.buttons}>
                             <Button
                                 variant="contained"
@@ -112,7 +112,7 @@ class NewPaletteForm extends Component {
                                 onClick={this.clearColors}
                             >
                                 Clear Palette
-                        </Button>
+                            </Button>
                             <Button
                                 variant="contained"
                                 color="primary"
@@ -121,7 +121,7 @@ class NewPaletteForm extends Component {
                                 disabled={paletteIsFull}
                             >
                                 Random Color
-                        </Button>
+                            </Button>
                         </div>
                         <ColorPickerForm
                             paletteIsFull={paletteIsFull}
@@ -137,7 +137,7 @@ class NewPaletteForm extends Component {
                 >
                     <div className={classes.drawerHeader} />
                     <DraggableColorList
-                        colors={this.state.colors}
+                        colors={colors}
                         removeColor={this.removeColor}
                         axis="xy"
                         onSortEnd={this.onSortEnd}

@@ -1,4 +1,3 @@
-import DraggableColorBox from "../DraggableColorBox";
 import sizes from './sizes';
 
 const styles = {
