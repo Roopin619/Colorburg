@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Colorburg/static/css/main.0f7a9115.chunk.css",
+    "main.js": "/Colorburg/static/js/main.9fbc475b.chunk.js",
+    "main.js.map": "/Colorburg/static/js/main.9fbc475b.chunk.js.map",
+    "runtime-main.js": "/Colorburg/static/js/runtime-main.c745500a.js",
+    "runtime-main.js.map": "/Colorburg/static/js/runtime-main.c745500a.js.map",
+    "static/css/2.7095f003.chunk.css": "/Colorburg/static/css/2.7095f003.chunk.css",
+    "static/js/2.40bfc3dc.chunk.js": "/Colorburg/static/js/2.40bfc3dc.chunk.js",
+    "static/js/2.40bfc3dc.chunk.js.map": "/Colorburg/static/js/2.40bfc3dc.chunk.js.map",
+    "index.html": "/Colorburg/index.html",
+    "precache-manifest.b63351b79a92149ecced169db9852d37.js": "/Colorburg/precache-manifest.b63351b79a92149ecced169db9852d37.js",
+    "service-worker.js": "/Colorburg/service-worker.js",
+    "static/css/2.7095f003.chunk.css.map": "/Colorburg/static/css/2.7095f003.chunk.css.map",
+    "static/css/main.0f7a9115.chunk.css.map": "/Colorburg/static/css/main.0f7a9115.chunk.css.map",
+    "static/js/2.40bfc3dc.chunk.js.LICENSE.txt": "/Colorburg/static/js/2.40bfc3dc.chunk.js.LICENSE.txt",
+    "static/media/bg.svg": "/Colorburg/static/media/bg.926361b7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c745500a.js",
+    "static/css/2.7095f003.chunk.css",
+    "static/js/2.40bfc3dc.chunk.js",
+    "static/css/main.0f7a9115.chunk.css",
+    "static/js/main.9fbc475b.chunk.js"
+  ]
+}
