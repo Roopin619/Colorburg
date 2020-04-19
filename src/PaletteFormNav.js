@@ -59,7 +59,7 @@ class PaletteFormNav extends Component {
                                 color="secondary"
                                 className={classes.button}
                             >
-                                Go Back
+                                Back
                             </Button>
                         </Link>
                         <Button

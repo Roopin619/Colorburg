@@ -13,9 +13,9 @@ export default {
         "&:hover button": {
             opacity: 1
         },
-        [sizes.down("lg")]: {
-            width: "25%",
-            height: props => (props.showingFullPalette ? "20%" : "33.3333%"),
+        [sizes.down("xl")]: {
+            width: "20%",
+            height: props => (props.showingFullPalette ? "25%" : "50%"),
         },
         [sizes.down("md")]: {
             width: "50%",
@@ -24,6 +24,7 @@ export default {
         [sizes.down("xs")]: {
             width: "100%",
             height: props => (props.showingFullPalette ? "5%" : "10%"),
+            marginBottom: "-4px"
         }
     },
     copyText: {

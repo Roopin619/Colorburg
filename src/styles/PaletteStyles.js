@@ -38,9 +38,9 @@ export default {
       border: "none",
       textDecoration: "none"
     },
-    [sizes.down("lg")]: {
-      width: "25%",
-      height: "33.3333%"
+    [sizes.down("xl")]: {
+      width: "20%",
+      height: "50%"
     },
     [sizes.down("md")]: {
       width: "50%",

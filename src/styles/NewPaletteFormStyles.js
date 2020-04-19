@@ -47,10 +47,11 @@ const styles = theme => ({
         alignItems: "center"
     },
     buttons: {
-        width: "100%"
+        width: "100%",
     },
     button: {
-        width: "50%"
+        width: "50%",
+        padding: "0.4rem 0"
     }
 });
 

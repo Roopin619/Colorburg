@@ -14,9 +14,9 @@ const styles = {
             color: "white",
             transform: "scale(1.5)"
         },
-        [sizes.down("lg")]: {
-            width: "25%",
-            height: "20%" 
+        [sizes.down("xl")]: {
+            width: "20%",
+            height: "25%" 
         },
         [sizes.down("md")]: {
             width: "50%",

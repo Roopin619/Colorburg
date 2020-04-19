@@ -19,19 +19,24 @@ export default {
         /* background by SVGBackgrounds.com */
         backgroundColor: "#394bad",
         backgroundImage: `url(${bg})`,
-        overflow: "scroll"
+        overflow: "auto"
     },
     heading: {
-        fontSize: "2rem"
+        fontSize: "2rem",
+        margin: "1.8rem 0"
     },
     container: {
         width: "50%",
         display: "flex",
         alignItems: "flex-start",
         flexDirection: "column",
+        marginBottom: "2rem",
         flexWrap: "wrap",
-        [sizes.down("lg")]: {
+        [sizes.down("md")]: {
             width: "70%"
+        },
+        [sizes.down("sm")]: {
+            width: "80%"
         }
     },
     nav: {
@@ -48,14 +53,23 @@ export default {
         boxSizing: "border-box",
         width: "100%",
         display: "grid",
-        gridTemplateColumns: "repeat(3, 30%)",
-        gridGap: "2rem",
+        justifyContent: "space-between",
+        [sizes.down("xl")]: {
+            gridTemplateColumns: "repeat(3, 30%)",
+            gridGap: "3rem",
+        },
+        [sizes.down("lg")]: {
+            gridTemplateColumns: "repeat(3, 30%)",
+            gridGap: "2rem",
+        },
         [sizes.down("md")]: {
-            gridTemplateColumns: "repeat(2, 50%)"
+            gridTemplateColumns: "repeat(2, 45%)",
+            gridGap: "2.5rem"
         },
         [sizes.down("xs")]: {
-            gridTemplateColumns: "repeat(1, 100%)",
-            gridGap: "1.5rem"
+            gridTemplateColumns: "repeat(1, 90%)",
+            gridGap: "2.5rem",
+            justifyContent: "space-around",
         }
     }
 };

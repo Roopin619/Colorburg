@@ -5,7 +5,10 @@ export default {
         display: "flex",
         alignItems: "center",
         justifyContent: "flex-start",
-        height: "6vh"
+        height: "6vh",
+        [sizes.down("xs")]: {
+            paddingLeft: "1rem"
+        }
     },
     logo: {
         marginRight: "1rem",

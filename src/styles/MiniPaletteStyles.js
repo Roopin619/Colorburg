@@ -1,3 +1,5 @@
+import sizes from './sizes';
+
 export default {
     root: {
         backgroundColor: "white",
@@ -13,10 +15,24 @@ export default {
     },
     colors: {
         backgroundColor: "#dae1e4",
-        height: "6.5rem",
         width: "100%",
         borderRadius: "4px",
-        overflow: "hidden"
+        overflow: "hidden",
+        [sizes.down("xl")]: {
+            height: "10rem"
+        },
+        [sizes.down("lg")]: {
+            height: "7rem"
+        },
+        [sizes.down("md")]: {
+            height: "12rem"
+        },
+        [sizes.down("sm")]: {
+            height: "9rem"
+        },
+        [sizes.down("xs")]: {
+            height: "13rem"
+        }
     },
     title: {
         display: "flex",
@@ -24,7 +40,7 @@ export default {
         alignItems: "center",
         margin: "0",
         color: "black",
-        padding: "0.5rem 0.5rem 0.2rem 0",
+        padding: "0.7rem 0.5rem 0.4rem 0",
         fontSize: "0.8rem",
         fontWeight: "500",
         position: "relative"
@@ -38,7 +54,13 @@ export default {
         display: "inline-block",
         margin: "0 auto",
         position: "relative",
-        marginBottom: "-3px"
+        marginBottom: "-3px",
+        [sizes.down("xl")]: {
+            marginBottom: "-3.5px"
+        },
+        [sizes.down("lg")]: {
+            marginBottom: "-3px"
+        }
     },
     deleteIcon: {
         color: "white",
