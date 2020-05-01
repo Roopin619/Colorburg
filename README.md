@@ -10,12 +10,6 @@ A clone :performing_arts: of websites like [Flat UI Colors](https://flatuicolors
 # Make a visit
 Visit __[Colorburg](https://roopin619.github.io/Colorburg/)__
 
-# Features
-- A total set of 9 color palettes and 180 colors for your designs, projects, presentations and other needs.
-- Apart from these default palettes, you can create your own color palette using Chrome Picker.
-- You can copy the HEX, RGB or RGBA code to your clipboard by clicking on the corresponding color.
-- The slider at the top provides the option of customising brightness of colors.
-
 # Development setup
 
 In the project directory, you can run:
@@ -25,6 +19,18 @@ In the project directory, you can run:
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+# Features
+- A total set of 9 color palettes and 180 colors for your designs, projects, presentations and other needs.
+- Apart from these default palettes, you can create your own color palette using Chrome Picker.
+- You can copy the HEX, RGB or RGBA code to your clipboard by clicking on the corresponding color.
+- The slider at the top provides the option of customising brightness of colors.
+
+# In Action
+![](images/Screenshot-1.png)
+![](images/Screenshot-2.png)
+![](images/Screenshot-3.png)
+![](images/Screenshot-4.png)
 
 # Contribution
 Feel free to raise issues, if you find any errors or have some suggestions that can make this application better.
